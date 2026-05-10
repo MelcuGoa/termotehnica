@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" fill="#ffffff"/>
+  <text x="320" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700">Aplicatia 2: temperatura exprimata in K, grade C si grade F</text>
+
+  <line x1="120" y1="340" x2="570" y2="340" stroke="#222" stroke-width="2"/>
+  <line x1="120" y1="90" x2="120" y2="340" stroke="#222" stroke-width="2"/>
+  <text x="345" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="14">Valoare numerica a temperaturii</text>
+
+  <g stroke="#d8dde6" stroke-width="1" font-family="Arial, sans-serif" font-size="12" fill="#222">
+    <line x1="120" y1="90" x2="120" y2="340"/>
+    <text x="120" y="360" text-anchor="middle">0</text>
+    <line x1="232.5" y1="90" x2="232.5" y2="340"/>
+    <text x="232.5" y="360" text-anchor="middle">500</text>
+    <line x1="345" y1="90" x2="345" y2="340"/>
+    <text x="345" y="360" text-anchor="middle">1000</text>
+    <line x1="457.5" y1="90" x2="457.5" y2="340"/>
+    <text x="457.5" y="360" text-anchor="middle">1500</text>
+    <line x1="570" y1="90" x2="570" y2="340"/>
+    <text x="570" y="360" text-anchor="middle">2000</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="14">
+    <text x="100" y="143" text-anchor="end" fill="#222">K</text>
+    <rect x="120" y="120" width="301" height="34" fill="#1f78b4"/>
+    <text x="431" y="143" fill="#222">1337,58 K</text>
+
+    <text x="100" y="213" text-anchor="end" fill="#222">grade C</text>
+    <rect x="120" y="190" width="239.5" height="34" fill="#33a02c"/>
+    <text x="369.5" y="213" fill="#222">1064,43 grade C</text>
+
+    <text x="100" y="283" text-anchor="end" fill="#222">grade F</text>
+    <rect x="120" y="260" width="438.3" height="34" fill="#e31a1c"/>
+    <text x="405" y="253" fill="#222">1947,97 grade F</text>
+  </g>
+
+  <text x="320" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#444">T = 1337,58 K; tC = T - 273,15; tF = 1,8 tC + 32</text>
+</svg>
