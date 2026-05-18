@@ -44,7 +44,7 @@ export DEBIAN_FRONTEND=noninteractive
 
 log "Updating Ubuntu and installing base packages"
 apt-get update
-apt-get install -y ca-certificates curl gnupg git unzip ufw iptables-persistent
+apt-get install -y ca-certificates curl gnupg git unzip ufw
 
 log "Creating swap if missing"
 if [ ! -f /swapfile ]; then
@@ -229,7 +229,9 @@ ufw --force enable
 iptables -I INPUT -p tcp --dport 22 -j ACCEPT || true
 iptables -I INPUT -p tcp --dport 80 -j ACCEPT || true
 iptables -I INPUT -p tcp --dport 443 -j ACCEPT || true
-netfilter-persistent save || true
+if command -v netfilter-persistent >/dev/null 2>&1; then
+  netfilter-persistent save || true
+fi
 
 log "Smoke tests"
 for url in http://127.0.0.1:4566 http://127.0.0.1:3000; do
